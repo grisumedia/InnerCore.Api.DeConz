@@ -105,5 +105,14 @@ namespace InnerCore.Api.DeConz.Models.Lights
         [DataMember(Name = "xy_inc")]
         public decimal? ColorCoordinatesIncrement { get; set; }
 
+        /// <summary>
+        /// Specifies the speed of a color loop (default: 15).
+        ///   1 = very fast
+        /// 255 = very slow
+        /// This parameter only has an effect when it is called together with Effect ColorLoop.
+        /// </summary>
+        [DataMember(Name = "colorloopspeed")]
+        public int? ColorLoopSpeed { get; set; }
+
     }
 }
