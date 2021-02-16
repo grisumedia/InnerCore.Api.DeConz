@@ -23,6 +23,13 @@ namespace InnerCore.Api.DeConz.Models.Lights
         /// Alert multiple times
         /// </summary>
         [EnumMember(Value = "lselect")]
-        Multiple
+        Multiple,
+
+        /// <summary>
+        /// Alert once
+        /// Possible state when reading
+        /// </summary>
+        [EnumMember(Value = "alert")]
+        Alert
     }
 }
